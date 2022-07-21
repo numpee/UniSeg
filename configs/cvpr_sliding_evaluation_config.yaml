@@ -1,0 +1,24 @@
+defaults:
+  - method: bcenull
+  - logging: cvpr_sliding_eval
+  - model: hrnet_w18
+  - augmentation: paper_eval_augmentation
+debug_mode: False
+random_seed: 0
+use_cudnn: True
+batch_size: 1
+num_workers: 4
+model_folder_path: null
+experiment_name: SW_
+image_log_datasets: []
+num_images_to_log: 1
+use_sliding_window: True
+num_recents_to_eval: 1
+dataset_root_paths:
+  cityscapes: "/net/acadia14a/data/dokim/mseg_dataset/Cityscapes"
+  bdd: "/net/acadia14a/data/dokim/mseg_dataset/BDD/bdd100k/seg"
+  idd: "/net/acadia14a/data/dokim/mseg_dataset/IDD/IDD_Segmentation"
+  mapillary: "/net/acadia14a/data/dokim/mseg_dataset/Mapillary"
+  kitti: "/net/acadia14a/data/dokim/mseg_dataset/Kitti/training"
+  wilddash: "/net/acadia14a/data/dokim/mseg_dataset/WildDash"
+  camvid: "/net/acadia14a/data/dokim/mseg_dataset/Camvid"

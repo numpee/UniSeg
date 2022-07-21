@@ -1,0 +1,29 @@
+defaults:
+  - method: bcenull_cib
+  - logging: post_eval
+  - model: hrnet_w18
+  - augmentation: paper_eval_augmentation
+debug_mode: False
+random_seed: 0
+use_cudnn: True
+batch_size: 8
+num_workers: 4
+model_folder_path: /home/dongwan/checkpoints_large/cib_bcenull_w18_2021-02-21_0
+experiment_name: cib_bcenull
+image_log_datasets: []
+num_images_to_log: 0
+use_sliding_window: False
+first_epoch: 90
+last_epoch: 149
+log_start: 30
+eval_mode: full #center_crop
+
+dataset_root_paths:
+  cityscapes: "/net/acadia14a/data/dokim/mseg_dataset/Cityscapes"
+  bdd: "/net/acadia14a/data/dokim/mseg_dataset/BDD/bdd100k/seg"
+  idd: "/net/acadia14a/data/dokim/mseg_dataset/IDD/IDD_Segmentation"
+  mapillary: "/net/acadia14a/data/dokim/mseg_dataset/Mapillary"
+  kitti: "/net/acadia14a/data/dokim/mseg_dataset/Kitti/training"
+  wilddash: "/net/acadia14a/data/dokim/mseg_dataset/WildDash"
+  camvid: "/net/acadia14a/data/dokim/mseg_dataset/Camvid"
+  camvid_v2: "/net/acadia14a/data/dokim/mseg_dataset/Camvid"

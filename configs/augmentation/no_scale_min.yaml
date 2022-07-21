@@ -1,0 +1,10 @@
+crop_size: [713, 713]
+pre_size: 1080
+scale_min: 0.5
+scale_max: 2.0
+eval_size: 1080
+joint_augmentations:
+  - randomSizeCrop
+  - resize
+  - rotate
+  - horizontalFlip

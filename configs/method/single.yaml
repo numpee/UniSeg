@@ -1,0 +1,14 @@
+method: single
+#dataset_configs:
+dataset_names: [cityscapes]
+#eval_dataset_names: [kitti, wilddash]
+eval_dataset_names: [cityscapes]
+train_mapping_scheme: null
+val_mapping_scheme: null
+combine_method: null
+num_datasets: 1
+num_classes: 19
+dataset_key: cityscapes
+trainer: trainers.single_trainer.SingleTrainer
+best_model_keys: [mIoU]
+epochs: 50

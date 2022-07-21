@@ -1,0 +1,16 @@
+method: unified
+#dataset_configs:
+dataset_names: [cityscapes, idd, bdd]
+#eval_dataset_names: [kitti, wilddash, camvid, cityscapes, idd, bdd, mapillary]
+eval_dataset_names: [mapillary, kitti, wilddash, camvid]
+train_mapping_scheme: _to_cib
+val_mapping_scheme: _to_cib_ind
+combine_method: concat
+num_datasets: 3
+num_classes: 28
+trainer: null
+best_model_keys: [mIoU]
+epochs: 150
+dataset_key: city_idd_bdd
+bce_no_reduce: False
+mapillary_special_mapping: False

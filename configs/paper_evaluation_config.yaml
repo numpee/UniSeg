@@ -1,0 +1,16 @@
+defaults:
+  - method: CIBM_cutmix
+  - logging: paper_eval
+  - model: hrnet_w18
+  - augmentation: paper_eval_augmentation
+debug_mode: False
+random_seed: 0
+use_cudnn: True
+batch_size: 4
+num_workers: 8
+model_folder_path: null
+experiment_name: unified_model
+image_log_datasets: []
+num_images_to_log: 1
+use_sliding_window: False
+log_start: 30

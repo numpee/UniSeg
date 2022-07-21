@@ -1,0 +1,30 @@
+defaults:
+  - method: bcenull
+  - logging: dongwan
+  - model: hrnet_w48
+  - augmentation: base_augmentation
+  - distributed: distributed
+debug_mode: False
+random_seed: 0
+use_cudnn: True
+lr: 0.01
+min_lr: 0
+optimizer: SGD
+lr_scheduler: poly
+momentum: 0.9
+weight_decay: 1e-4
+batch_size: 16
+num_workers: 32
+experiment_name: trial
+resume_training: False
+ckpt_path: null
+log_start: 30
+use_amp: True
+dataset_root_paths:
+  cityscapes: "/net/acadia14a/data/dokim/mseg_dataset/Cityscapes"
+  bdd: "/net/acadia14a/data/dokim/mseg_dataset/BDD/bdd100k/seg"
+  idd: "/net/acadia14a/data/dokim/mseg_dataset/IDD/IDD_Segmentation"
+  mapillary: "/net/acadia14a/data/dokim/mseg_dataset/Mapillary"
+  kitti: "/net/acadia14a/data/dokim/mseg_dataset/Kitti/training"
+  wilddash: "/net/acadia14a/data/dokim/mseg_dataset/WildDash"
+  camvid: "/net/acadia14a/data/dokim/mseg_dataset/Camvid"

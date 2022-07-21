@@ -1,0 +1,3 @@
+model: segformer
+segformer_type: b4
+PRETRAIN_PATH: /net/acadia14a/data/dokim/pretrained_models/mit_${segformer_type}.pth

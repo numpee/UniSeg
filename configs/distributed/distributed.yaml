@@ -1,0 +1,6 @@
+num_nodes: 4
+num_gpu_per_node: 1
+master_address: localhost
+master_port: 12355
+backend: nccl
+nr: 0

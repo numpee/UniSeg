@@ -1,0 +1,4 @@
+wandb_entity: numpee
+project_name: uniseg_sliding_evals
+experiment_dir: /net/acadia14a/data/dokim/checkpoints
+use_wandb: True

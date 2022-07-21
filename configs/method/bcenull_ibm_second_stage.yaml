@@ -1,0 +1,16 @@
+method: BCENull
+#dataset_configs:
+dataset_names: [idd, bdd, mapillary]
+eval_dataset_names: [kitti, wilddash, camvid, cityscapes]
+train_mapping_scheme: _to_ibm
+val_mapping_scheme: _to_ibm_ind
+combine_method: concat
+num_datasets: 3
+num_classes: 70
+trainer: null
+best_model_keys: [mIoU]
+epochs: 50
+dataset_key: idd_bdd_mapillary
+bce_no_reduce: False
+mapillary_special_mapping: False
+distribution_threshold: -1
