@@ -1,6 +1,6 @@
 # UniSeg
 
-## Setup 
+## Setup
 
 ### Installation
 
