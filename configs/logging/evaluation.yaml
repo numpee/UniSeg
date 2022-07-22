@@ -1,4 +1,4 @@
-wandb_entity: numpee
+wandb_entity: YOUR_WANDB_ACCOUNT
 project_name: universal-seg-evaluations
 experiment_dir: /net/acadia14a/data/dokim/checkpoints
 use_wandb: True

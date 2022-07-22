@@ -1,4 +1,4 @@
-wandb_entity: numpee
+wandb_entity: YOUR_WANDB_ACCOUNT
 project_name: universal-segmentation-v2-evals
 experiment_dir: /net/acadia14a/data/dokim/checkpoints
 use_wandb: True
